@@ -1,0 +1,14 @@
+apply from: "$project.rootDir/android.config.gradle"
+
+
+dependencies {
+    implementation localModules.core
+    implementation localModules.domain
+
+    implementation libraries.core
+    implementation libraries.appcompat
+    implementation libraries.material
+
+    implementation libraries.hilt
+    kapt kaptLibraries.hiltCompiler
+}
