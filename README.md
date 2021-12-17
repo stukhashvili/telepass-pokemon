@@ -5,10 +5,6 @@ Demo android application to demonstrate clean layered architecture with modules.
 
 Guidelines:
 
-* Поле ввода поискового запроса ✅
-* Список криптовалют с картинкой значка валюты и текущего курса ✅
-* Верстка должна соотвествовать требованиям Material design ✅
-
 * Use Kotlin based, Coroutines + Flow for asynchronous. ✅
 * Minimum SDK level 23. ✅
 * Use Clean Architecture (Repository pattern). ✅
