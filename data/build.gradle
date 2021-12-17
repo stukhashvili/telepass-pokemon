@@ -17,9 +17,6 @@ dependencies {
     implementation libraries.retrofit
     implementation libraries.retrofitMoshiConverter
 
-    implementation libraries.room
-    kapt kaptLibraries.roomCompiler
-
     implementation libraries.hilt
     kapt kaptLibraries.hiltCompiler
 }

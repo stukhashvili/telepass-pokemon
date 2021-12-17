@@ -1,13 +1,24 @@
 apply from: "$project.rootDir/android.config.gradle"
 
+android {
+    buildFeatures {
+        viewBinding true
+    }
+}
 
 dependencies {
     implementation localModules.core
     implementation localModules.domain
 
-    implementation libraries.core
     implementation libraries.appcompat
+    implementation libraries.core
+    implementation libraries.fragmentKtx
     implementation libraries.material
+    implementation libraries.uniflowCore
+    implementation libraries.uniflowAndroid
+
+    implementation libraries.glide
+    kapt kaptLibraries.glideCompiler
 
     implementation libraries.hilt
     kapt kaptLibraries.hiltCompiler

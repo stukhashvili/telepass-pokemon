@@ -4,7 +4,7 @@ package com.example.telepasspokemon.data.dto
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
 
-@JsonClass(generateAdapter = true)
+@JsonClass(generateAdapter = false)
 data class NamedResourceDto(
     @Json(name = "name")
     val name: String,

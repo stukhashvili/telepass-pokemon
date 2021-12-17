@@ -4,6 +4,7 @@
     <bytecodeTargetLevel target="1.7">
       <module name="Telepass_Pokémon.app" target="11" />
       <module name="Telepass_Pokémon.data" target="11" />
+      <module name="Telepass_Pokémon.domain" target="11" />
       <module name="Telepass_Pokémon.presentation" target="11" />
     </bytecodeTargetLevel>
   </component>

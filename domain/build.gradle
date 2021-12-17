@@ -1,13 +1,14 @@
-plugins {
-    id 'java-library'
-    id 'kotlin'
-}
-
-java {
-    sourceCompatibility = JavaVersion.VERSION_1_7
-    targetCompatibility = JavaVersion.VERSION_1_7
-}
+apply from: "$project.rootDir/android.config.gradle"
 
 dependencies {
     implementation localModules.core
+
+    implementation libraries.hilt
+    kapt kaptLibraries.hiltCompiler
+
+    testImplementation testLibraries.junit
+    testImplementation testLibraries.mockitoCore
+    testImplementation testLibraries.mockitoKotlin
+    testImplementation testLibraries.coroutines
+
 }

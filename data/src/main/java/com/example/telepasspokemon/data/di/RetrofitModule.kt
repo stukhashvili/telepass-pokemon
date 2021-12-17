@@ -2,6 +2,8 @@ package com.example.telepasspokemon.data.di
 
 import com.example.telepasspokemon.data.BuildConfig
 import com.example.telepasspokemon.data.services.PokemonApi
+import com.squareup.moshi.Moshi
+import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -23,6 +25,13 @@ internal class RetrofitModule {
 
     private val isDebug get() = BuildConfig.DEBUG
     private val baseUrl get() = BuildConfig.BASE_URL
+
+    @Provides
+    fun provideMoshi(): Moshi {
+        return Moshi.Builder()
+            .add(KotlinJsonAdapterFactory())
+            .build()
+    }
 
     @Provides
     @Singleton
@@ -47,11 +56,12 @@ internal class RetrofitModule {
     @Singleton
     fun provideRetrofit(
         okHttpClient: OkHttpClient,
+        moshi: Moshi,
     ): Retrofit {
         return Retrofit.Builder()
             .client(okHttpClient)
             .baseUrl(baseUrl)
-            .addConverterFactory(MoshiConverterFactory.create())
+            .addConverterFactory(MoshiConverterFactory.create(moshi))
             .build()
     }
 

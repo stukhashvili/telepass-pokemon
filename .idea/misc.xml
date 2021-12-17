@@ -5,7 +5,19 @@
       <map>
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.15208333333333332" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.15208333333333332" />
+        <entry key="presentation/src/main/res/drawable/circle.xml" value="0.21666666666666667" />
+        <entry key="presentation/src/main/res/drawable/circle_outline.xml" value="0.21666666666666667" />
+        <entry key="presentation/src/main/res/drawable/ic_arrow_left.xml" value="0.21666666666666667" />
+        <entry key="presentation/src/main/res/drawable/ic_circle.xml" value="0.21666666666666667" />
+        <entry key="presentation/src/main/res/drawable/ic_circle_outline.xml" value="0.21666666666666667" />
+        <entry key="presentation/src/main/res/drawable/selector_image_indicator.xml" value="0.21666666666666667" />
         <entry key="presentation/src/main/res/layout/activity_main.xml" value="0.2515625" />
+        <entry key="presentation/src/main/res/layout/fragment_detail.xml" value="0.2515625" />
+        <entry key="presentation/src/main/res/layout/fragment_details.xml" value="0.17222222222222222" />
+        <entry key="presentation/src/main/res/layout/fragment_home.xml" value="0.16574074074074074" />
+        <entry key="presentation/src/main/res/layout/item_loading.xml" value="0.17222222222222222" />
+        <entry key="presentation/src/main/res/layout/item_pokemon.xml" value="0.2515625" />
+        <entry key="presentation/src/main/res/layout/item_pokemon_image.xml" value="0.17222222222222222" />
       </map>
     </option>
   </component>

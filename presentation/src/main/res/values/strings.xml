@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Telepass Pokémon</string>
+    <string name="stats">Stats</string>
+    <string name="category">Categories</string>
+    <string name="pokemon_icon_transition_name">pokemon_icon</string>
+    <string name="pokemon_name">pokemon_name</string>
+    <string name="hello">Hello!</string>
+    <string name="error">Error accrued while loading.\nTab to retry…</string>
 </resources>
