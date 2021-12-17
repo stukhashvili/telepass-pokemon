@@ -4,6 +4,7 @@ Demo android application to demonstrate clean layered architecture with modules.
 ## Checklist
 
 Guidelines:
+
 * Поле ввода поискового запроса ✅
 * Список криптовалют с картинкой значка валюты и текущего курса ✅
 * Верстка должна соотвествовать требованиям Material design ✅
@@ -19,7 +20,8 @@ Guidelines:
 * Create a README.md file where you describe the project and your choices. ✅
 * Put your project on a public repository on GitHub. ✅
 
-Bonus Tasks
+Bonus Tasks:
+
 * Use one external library at most ✅
 * Make the app work seamlessly also offline -
 * Write Unit Tests ✅ (Only domain layer)
