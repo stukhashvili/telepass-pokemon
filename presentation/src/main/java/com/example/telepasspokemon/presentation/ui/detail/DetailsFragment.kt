@@ -106,7 +106,7 @@ class DetailsFragment : Fragment() {
     private fun onPokemonReceived(pokemon: DetailsState.PokemonUi) {
         binding.tvTitle.text = pokemon.name
         imageListAdapter.images = pokemon.images
-        binding.tvStats.text = pokemon.stats.map(PokemonStatUi::name).joinToString()
+        binding.tvStats.text = pokemon.stats.joinToString { "${it.name} - ${it.effort}" }
         binding.tvCategory.text = pokemon.types.joinToString()
     }
 
